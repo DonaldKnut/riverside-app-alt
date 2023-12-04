@@ -1,0 +1,81 @@
+// portfolio.scss
+
+@import "../../app.scss"; // Assuming you have global styles imported
+
+.portfolio {
+  .progress {
+    h1 {
+      font-size: 100px;
+
+      @include mobile {
+        font-size: 72px;
+        text-align: center;
+      }
+    }
+
+    .progressBar {
+      // Your existing styles for the progress bar
+    }
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px; // Adjust as needed
+    margin: 0 auto;
+    padding: 20px;
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .imageContainer {
+      flex: 1 1 45%; // Adjust as needed
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+      }
+
+      @include mobile {
+        flex: 1 1 100%;
+      }
+    }
+
+    .textContainer {
+      flex: 1 1 50%; // Adjust as needed
+      padding: 20px;
+      transition: transform 0.5s ease;
+
+      h2 {
+        // Your existing styles for headings
+      }
+
+      p {
+        // Your existing styles for paragraphs
+      }
+
+      button {
+        // Your existing styles for buttons
+      }
+
+      @include mobile {
+        flex: 1 1 100%;
+        padding: 10px;
+      }
+    }
+  }
+}
