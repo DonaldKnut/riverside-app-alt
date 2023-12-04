@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "../portfolio/Portfolio.scss";
+import "../portfolio/portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { MdCastConnected } from "react-icons/md";
 
@@ -51,7 +51,7 @@ const Single = ({ item }) => {
             <p>{item.desc}</p>
             <button
               style={{
-                backgroundColor: "#4CAF50",
+                background: "linear-gradient(69deg, #cca00e, #ee844b)",
                 color: "white",
                 padding: "10px 20px",
                 borderRadius: "5px",
